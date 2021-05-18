@@ -66,7 +66,7 @@ int main(){
 	fclose (outFile);
 
 
-//decrypt
+//decrypt the files
 unsigned char *decryptedText = (unsigned char*) malloc (sizeof(unsigned char)*lSize);
 EVP_DecryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, key, iv);
 
